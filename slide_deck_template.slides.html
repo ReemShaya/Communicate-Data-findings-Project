@@ -13193,41 +13193,19 @@ a.anchor-link {
 </head>
 
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-
-<style type="text/css">
-//div.output_wrapper {
-//  margin-top: 0px;
-//}
-.input_hidden {
-  display: none;
-//  margin-top: 5px;
-}
-</style>
-
-<script>
-$(document).ready(function(){
-  $(".output_wrapper").click(function(){
-      $(this).prev('.input_hidden').slideToggle();
-  });
-})
-</script>
-
 <body>
 
 
 <div class="reveal">
 <div class="slides">
 <section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="(Ford-GoBike-System-Data)">(Ford GoBike System Data)<a class="anchor-link" href="#(Ford-GoBike-System-Data)">&#182;</a></h1><h2 id="by-(Reem-Shaya)">by (Reem Shaya)<a class="anchor-link" href="#by-(Reem-Shaya)">&#182;</a></h2>
 </div>
 </div>
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Investigation-Overview">Investigation Overview<a class="anchor-link" href="#Investigation-Overview">&#182;</a></h2><blockquote><p>In this project, I will use Python libraries for data cleaning and data visualization in order to explore and learn about data set variables and understand data structure, anomalies, patterns, and relationships.</p>
 </blockquote>
@@ -13238,8 +13216,7 @@ $(document).ready(function(){
 </div>
 </div><aside class="notes">
 
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <blockquote><p>Note that the above cells have been set as "Skip"-type slides. That means
 that when the notebook is rendered as http slides, those cells won't show up.</p>
@@ -13249,8 +13226,7 @@ that when the notebook is rendered as http slides, those cells won't show up.</p
 </div>
 </div>
 </aside></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="(Visualization-1)">(Visualization 1)<a class="anchor-link" href="#(Visualization-1)">&#182;</a></h2><blockquote><p>I want to know how many customers and subscribers?
 We conclude here that the number of Subscriber users is much more than customers, as the number of Subscriber users is 158,386 and the number of customers is only 16,566</p>
@@ -13260,30 +13236,11 @@ We conclude here that the number of Subscriber users is much more than customers
 </div>
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input_hidden">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sb</span><span class="o">.</span><span class="n">countplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df_ford</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;user_type&#39;</span><span class="p">);</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;User Type&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Count&#39;</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
 
 <div class="output_wrapper">
 <div class="output">
 
-
 <div class="output_area">
-
-    <div class="prompt output_prompt">Out[3]:</div>
-
 
 
 
@@ -13294,9 +13251,6 @@ We conclude here that the number of Subscriber users is much more than customers
 </div>
 
 <div class="output_area">
-
-    <div class="prompt"></div>
-
 
 
 
@@ -13312,8 +13266,7 @@ We conclude here that the number of Subscriber users is much more than customers
 </div>
 
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="(Visualization-2)">(Visualization 2)<a class="anchor-link" href="#(Visualization-2)">&#182;</a></h2><blockquote><p>I want to know bike sharing for both males and females?
 We note that (no) is higher for males, females, and others, and this is very logical and intuitive, because I mentioned earlier that the (no) rate is close to 90%.</p>
@@ -13323,28 +13276,11 @@ We note that (no) is higher for males, females, and others, and this is very log
 </div>
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input_hidden">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sb</span><span class="o">.</span><span class="n">countplot</span><span class="p">(</span><span class="n">data</span> <span class="o">=</span> <span class="n">df_ford</span><span class="p">,</span> <span class="n">x</span> <span class="o">=</span> <span class="s1">&#39;member_gender&#39;</span><span class="p">,</span> <span class="n">hue</span> <span class="o">=</span> <span class="s1">&#39;bike_share_for_all_trip&#39;</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
 
 <div class="output_wrapper">
 <div class="output">
 
-
 <div class="output_area">
-
-    <div class="prompt output_prompt">Out[4]:</div>
-
 
 
 
@@ -13355,9 +13291,6 @@ We note that (no) is higher for males, females, and others, and this is very log
 </div>
 
 <div class="output_area">
-
-    <div class="prompt"></div>
-
 
 
 
@@ -13373,8 +13306,7 @@ We note that (no) is higher for males, females, and others, and this is very log
 </div>
 
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="(Visualization-3)">(Visualization 3)<a class="anchor-link" href="#(Visualization-3)">&#182;</a></h2><blockquote><p>Here I put this figure to show the relationships between user type, gender, and time in seconds.
 We note here that the drawing was divided mainly based on the type of user, because it is in the first line of the code, as it was divided into a subscriber and a client.. Then the details were made in each form according to gender (female, male, other) and the y axis represents the time for that for a small drawing This is because we are dealing with seconds.</p>
@@ -13384,29 +13316,11 @@ We note here that the drawing was divided mainly based on the type of user, beca
 </div>
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input_hidden">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">g</span> <span class="o">=</span> <span class="n">sb</span><span class="o">.</span><span class="n">FacetGrid</span><span class="p">(</span><span class="n">data</span> <span class="o">=</span> <span class="n">df_ford</span><span class="p">,</span> <span class="n">col</span> <span class="o">=</span> <span class="s1">&#39;user_type&#39;</span><span class="p">,</span> <span class="n">size</span> <span class="o">=</span> <span class="mi">5</span><span class="p">)</span>
-<span class="n">g</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">sb</span><span class="o">.</span><span class="n">boxplot</span><span class="p">,</span> <span class="s1">&#39;member_gender&#39;</span><span class="p">,</span> <span class="s1">&#39;duration_sec&#39;</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
 
 <div class="output_wrapper">
 <div class="output">
 
-
 <div class="output_area">
-
-    <div class="prompt output_prompt">Out[5]:</div>
-
 
 
 
@@ -13417,9 +13331,6 @@ We note here that the drawing was divided mainly based on the type of user, beca
 </div>
 
 <div class="output_area">
-
-    <div class="prompt"></div>
-
 
 
 
@@ -13436,8 +13347,7 @@ We note here that the drawing was divided mainly based on the type of user, beca
 
 </div><aside class="notes">
 
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <blockquote><p>Once you're ready to finish your presentation, check your output by using
 nbconvert to export the notebook and set up a server for the slides. From the
@@ -13453,35 +13363,19 @@ before you finish your presentation!</p>
 </div>
 </div>
 </div>
-</aside></section></section><section><section>
+</aside><aside class="notes">
+
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input_hidden">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span> jupyter nbconvert slide_deck_template.ipynb --to slides --no-input
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
 
 <div class="output_wrapper">
 <div class="output">
 
-
 <div class="output_area">
-
-    <div class="prompt"></div>
-
 
 <div class="output_subarea output_stream output_stderr output_text">
 <pre>[NbConvertApp] WARNING | Config option `kernel_spec_manager_class` not recognized by `NbConvertApp`.
 [NbConvertApp] Converting notebook slide_deck_template.ipynb to slides
-[NbConvertApp] Writing 326933 bytes to slide_deck_template.slides.html
+[NbConvertApp] Writing 330685 bytes to slide_deck_template.slides.html
 </pre>
 </div>
 </div>
@@ -13489,7 +13383,8 @@ before you finish your presentation!</p>
 </div>
 </div>
 
-</div></section></section>
+</div>
+</aside></section></section>
 </div>
 </div>
 
