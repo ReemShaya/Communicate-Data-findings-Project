@@ -19,3 +19,8 @@ In this project, I will use Python libraries for data cleaning and data visualiz
 > 4- Most of the people whose flights increase are those born in 1980 to 2000 
 >
 > 5- Women whose ages range between 1950 and 1990 are very few and in some years it is not mentioned
+
+
+## Key Insights for Presentation
+
+> For the presentation, I focused on the basic elements and how they interrelate and relate to each other.  Like clarifying the users' gender and age groups as well as characteristics like how long they ride, I made sure to use different color palettes for each quality variable to make sure it was clearly different between plots.
